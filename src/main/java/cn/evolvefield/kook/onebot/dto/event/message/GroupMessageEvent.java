@@ -1,13 +1,12 @@
 package cn.evolvefield.kook.onebot.dto.event.message;
 
-import cn.evolvefield.mirai.onebot.entity.Anonymous;
+import cn.evolvefield.kook.onebot.entity.Anonymous;
 import com.alibaba.fastjson2.annotation.JSONField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import net.mamoe.mirai.contact.Member;
 
 /**
  * @author cnlimiter
