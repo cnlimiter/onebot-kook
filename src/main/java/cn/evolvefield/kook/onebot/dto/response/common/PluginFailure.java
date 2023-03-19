@@ -1,6 +1,6 @@
 package cn.evolvefield.kook.onebot.dto.response.common;
 
-import cn.evolvefield.mirai.onebot.dto.response.ActionData;
+import cn.evolvefield.kook.onebot.dto.response.ActionData;
 
 /**
  * Description:

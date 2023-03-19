@@ -13,12 +13,12 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder(toBuilder = true)
 @EqualsAndHashCode(callSuper = true)
-public class IgnoreEvent extends Event{
-    public IgnoreEvent(){
+public class IgnoreOEvent extends OEvent {
+    public IgnoreOEvent(){
         this.setPostType("IGNORED");
         this.setTime(System.currentTimeMillis());
     }
-    public IgnoreEvent(long id){
+    public IgnoreOEvent(long id){
         this.setPostType("IGNORED");
         this.setTime(System.currentTimeMillis());
         this.setSelfId(id);

@@ -1,6 +1,8 @@
 package cn.evolvefield.kook.onebot.core;
 
-import cn.evolvefield.kook.onebot.dto.event.Event;
+
+import cn.evolvefield.kook.onebot.dto.event.OEvent;
+import snw.jkook.event.Event;
 
 /**
  * Project: kook
@@ -12,7 +14,7 @@ public class EventMap {
 
     private static final long currentTimeSeconds = System.currentTimeMillis() / 1000;
 
-    public static Event toDTO(snw.jkook.event.Event botEvent){
+    public static OEvent toDTO(Event botEvent){
 
 
 

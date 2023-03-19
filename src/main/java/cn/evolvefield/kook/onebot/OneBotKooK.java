@@ -1,6 +1,10 @@
 package cn.evolvefield.kook.onebot;
 
-import snw.jkook.plugin.BasePlugin;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Project: kook
@@ -8,28 +12,13 @@ import snw.jkook.plugin.BasePlugin;
  * Date: 2023/2/6 0:33
  * Description:
  */
-public class OneBotKooK extends BasePlugin {
-    private static OneBotKooK instance;
-    @Override
-    public void onLoad() {
-        instance = this;
-        saveDefaultConfig();
+@SpringBootApplication
+public class OneBotKooK {
+
+    public static Logger logger = LoggerFactory.getLogger("OneBot-Kook");
+    public static void main(String[] args) {
+        SpringApplication.run(OneBotKooK.class, args);
     }
 
-    @Override
-    public void onEnable() {
-        super.onEnable();
-    }
-
-    @Override
-    public void onDisable() {
-        super.onDisable();
-
-        saveConfig();
-    }
-
-    public static OneBotKooK getInstance() {
-        return instance;
-    }
 }
 

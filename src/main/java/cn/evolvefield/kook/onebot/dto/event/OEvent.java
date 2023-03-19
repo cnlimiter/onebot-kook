@@ -1,7 +1,6 @@
 package cn.evolvefield.kook.onebot.dto.event;
 
 import com.alibaba.fastjson2.annotation.JSONField;
-import com.alibaba.fastjson2.annotation.JSONField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +15,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder(toBuilder = true)
-public class Event {
+public class OEvent {
 
     @JSONField(name = "post_type")
     private String postType;

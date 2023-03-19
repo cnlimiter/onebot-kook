@@ -1,5 +1,7 @@
 package cn.evolvefield.kook.onebot.dto.response.common;
 
+import cn.evolvefield.kook.onebot.dto.response.ActionData;
+import cn.evolvefield.kook.onebot.entity.MsgId;
 import cn.evolvefield.mirai.onebot.dto.response.ActionData;
 import cn.evolvefield.mirai.onebot.entity.MsgId;
 
